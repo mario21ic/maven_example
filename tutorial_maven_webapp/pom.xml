@@ -7,11 +7,11 @@
         <groupId>org.javahispano</groupId>
         <version>1.0</version>
     </parent>
-    <groupId>org.javahispano</groupId>
-    <artifactId>tutorial_maven_webapp</artifactId>
-    <version>1.0</version>
+    <groupId>${parent.groupId}</groupId>
+    <version>${parent.version}</version>
+    <artifactId>tutorial_maven_war</artifactId>
     <packaging>war</packaging>
-    <name>tutorial_maven_webapp Maven Webapp</name>
+    <name>tutorial_maven_war</name>
     <url>http://maven.apache.org</url>
     <build>
         <finalName>tutorial_maven_webapp</finalName>
@@ -37,9 +37,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.javahispano</groupId>
+            <groupId>${parent.groupId}</groupId>
+            <version>${parent.version}</version>
             <artifactId>tutorial_maven_jar</artifactId>
-            <version>1.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>log4j</groupId>
